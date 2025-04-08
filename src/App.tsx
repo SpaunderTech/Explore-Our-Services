@@ -145,17 +145,17 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-brand-secondary">
+    <div className="min-h-screen bg-brand-secondary w-full">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <Moon className="h-8 w-8 text-brand-primary" />
               <span className="ml-2 text-xl font-bold text-gray-900">Dedicare</span>
-            </div>
+            </div> */}
 
-            <div className="flex-1 max-w-2xl mx-8">
+            <div className="flex-1 max-w-2xl mx-8 items-center">
               <div className={`relative transition-all duration-200 ${searchFocused ? 'scale-105' : ''}`}>
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                 <input
@@ -170,7 +170,7 @@ function App() {
               </div>
             </div>
 
-            <div className="flex items-center space-x-4">
+            {/* <div className="flex items-center space-x-4">
               <motion.button 
                 className="relative p-2 hover:bg-gray-100 rounded-full transition-colors"
                 whileHover={{ scale: 1.1 }}
@@ -187,18 +187,18 @@ function App() {
               <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
                 <HelpCircle className="h-6 w-6 text-gray-600" />
               </button>
-              <img
+              {/* <img
                 src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=100"
                 alt="Profile"
                 className="h-8 w-8 rounded-full border-2 border-white shadow-sm"
-              />
-            </div>
+              /> 
+            </div> */}
           </div>
         </div>
       </nav>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
         <div className="flex flex-col space-y-8">
           <div>
             <h1 className="text-2xl font-bold text-brand-primary mb-4">App Hub</h1>
